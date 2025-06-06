@@ -1,0 +1,22 @@
+{
+  "name": "sds",
+  "version": "1.0.0",
+  "description": "For the Society of Data Science, BIT MESRA. Under the leadership of Saahit Kamu and Rishi Agarwal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SDS",
+    "Data",
+    "Science"
+  ],
+  "author": "Rishi Agarwal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3"
+  }
+}
