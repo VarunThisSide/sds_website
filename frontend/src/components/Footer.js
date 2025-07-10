@@ -9,8 +9,8 @@ export default function Footer() {
   const [placeholder,setPlaceholder] = useState("Email Address")
 
   return (
-    <footer className="bg-[radial-gradient(circle_farthest-side_at_bottom,_#3b0764,_#000000)] text-white text-center justify-center items-center lg:text-left py-10 px-6 md:px-10 mt-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-48">
+    <footer className="relative overflow-hidden footer-background backdrop-blur-xl text-white text-center justify-center items-center lg:text-left py-10 px-6 md:px-10 mt-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-48 z-10">
         {/*Club Info */}
         <div>
           <h2 className="text-xl font-normal text-purple-500">SDS CLUB</h2>
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="text-center text-gray-400 mt-8 text-sm">
+      <div className="text-center text-gray-400 mt-8 text-sm z-10">
         © 2024 By Enative. All Rights Reserved.
       </div>
     </footer>
