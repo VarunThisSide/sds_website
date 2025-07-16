@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Navbar = () => {
-  const navItems = ["Home", "About", "Team", "Resources"];
+  const navItems = ["Home", "About", "Team", "Resources", "Me"];
 
   return (
     <nav className="w-full flex justify-between items-center px-8 py-20 bg-black text-white">
