@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-48 z-10 justify-center">
         {/*Club Info */}
         <div>
-          <h2 className="text-xl font-normal text-purple-500">SDS CLUB</h2>
+          <h2 className="text-3xl font-normal text-purple-500">SDS CLUB</h2>
           <p className="mt-2 text-gray-300">Society for Tech Enthusiasts</p>
         </div>
 
