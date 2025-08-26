@@ -61,14 +61,14 @@ export default function HeroSection() {
           Excellence
         </h1>
 
-        <p className="mt-6 text-lg text-gray-300">
+        <p className="mt-6 text-lg sm:text-2xl text-gray-300">
           Join the premier academic society dedicated to advancing data science research,
           fostering innovation in machine learning, and building the next generation of data scientists
           through workshops, collaboration, and events.
         </p>
 
         <div className="mt-8 flex justify-center md:justify-start">
-          <Button size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:opacity-90 transition">
+          <Button size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:opacity-90 transition md:text-xl">
             GET STARTED →
           </Button>
         </div>

@@ -10,14 +10,14 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden footer-background backdrop-blur-xl text-white text-center justify-center items-center lg:text-left py-10 px-6 md:px-10 mt-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-48 z-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-48 z-10 justify-center">
         {/*Club Info */}
         <div>
-          <h2 className="text-xl font-normal text-purple-500">SDS CLUB</h2>
+          <h2 className="text-3xl font-normal text-purple-500">SDS CLUB</h2>
           <p className="mt-2 text-gray-300">Society for Tech Enthusiasts</p>
         </div>
 
-      <div className="grid grid-cols-2 gap-1">
+      <div className="grid grid-cols-2 gap-10">
         {/* Explore */}
         <div>
           <h3 className="font-semibold text-white">Explore</h3>
@@ -46,13 +46,13 @@ export default function Footer() {
             <input
               type="email"
               placeholder={placeholder}
-              className="w-full px-2 py-1.5 md:py-1 pr-[4.8rem] rounded-full bg-white/10 text-white placeholder-white/50 font-medium backdrop-blur-md border border-white/20 focus:outline-none focus:ring-1 focus:ring-white/50 shadow-lg transition-all duration-100"
+              className="w-full px-3 py-1.5 text-lg md:py-1 md:px-4 md:text-base pr-[4.8rem] rounded-full bg-white/10 text-white placeholder-white/50 font-medium backdrop-blur-md border border-white/20 focus:outline-none focus:ring-1 focus:ring-white/50 shadow-lg transition-all duration-100"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}/>
             <button
-              className="bg-cyan-600 text-white px-4 right-0 rounded-full absolute active:scale-95 transition-transform h-full hover:bg-cyan-500 duration-200 hover:cursor-pointer"
+              className="bg-cyan-600 text-white text-base px-4 right-0 rounded-full absolute active:scale-95 transition-transform h-full hover:bg-cyan-500 duration-200 hover:cursor-pointer"
               onClick={(e)=>{
                 setPlaceholder("Done");
                 setEmail("");
