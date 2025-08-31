@@ -9,21 +9,23 @@ export default function Footer() {
   const [placeholder,setPlaceholder] = useState("Email Address")
 
   return (
-    <footer className="relative overflow-hidden footer-background backdrop-blur-xl text-white text-center justify-center items-center lg:text-left py-10 px-6 md:px-10 mt-12">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-48 z-10 justify-center">
+    <footer className="relative overflow-hidden footer-background backdrop-blur-xl text-white text-center justify-center items-center lg:text-left py-10 px-6 md:px-30 mt-12">
+      <div className="max-w-[1024px] mx-auto flex flex-col md:flex-row gap-8 md:gap-0 z-10 justify-center md:justify-between">
         {/*Club Info */}
         <div>
-          <h2 className="text-3xl font-normal text-purple-500">SDS CLUB</h2>
+          <div className="text-3xl font-extrabold bg-gradient-to-r from-purple-500 via-blue-400 to-cyan-400 text-transparent bg-clip-text">
+            SDS CLUB
+          </div>
           <p className="mt-2 text-gray-300">Society for Tech Enthusiasts</p>
         </div>
 
-      <div className="grid grid-cols-2 gap-10">
+      <div className="flex flex-row justify-between px-25 md:justify-center md:gap-20 md:px-0">
         {/* Explore */}
         <div>
           <h3 className="font-semibold text-white">Explore</h3>
           <ul className="mt-2 space-y-1 text-gray-300">
             <li className="hover:text-gray-50"><Link href="#">Resources</Link></li>
-            <li className="hover:text-gray-50"><Link href="/blog">Blog</Link></li>
+            <li className="hover:text-gray-50"><Link href="#">Blog</Link></li>
             <li className="hover:text-gray-50"><Link href="#">Documents</Link></li>
           </ul>
         </div>
@@ -40,13 +42,13 @@ export default function Footer() {
       </div>
 
         {/* Join Us */}
-        <div className="flex flex-wrap w-full max-w-72 mx-auto">
-          <h3 className="font-semibold text-white md:mb-1 mb-2 block w-full">Join us</h3>
+        <div className="flex flex-wrap max-w-[250px] mx-auto md:mx-0 justify-center items-center md:items-start md:justify-start">
+          <h3 className="font-semibold text-white md:mb-1 mb-2 pl-2.5 block">Join us</h3>
           <div className='flex rounded-xl mb-4 relative text-xs w-full mx-auto lg:mx-0'>
             <input
               type="email"
               placeholder={placeholder}
-              className="w-full px-3 py-1.5 text-lg md:py-1 md:px-4 md:text-base pr-[4.8rem] rounded-full bg-white/10 text-white placeholder-white/50 font-medium backdrop-blur-md border border-white/20 focus:outline-none focus:ring-1 focus:ring-white/50 shadow-lg transition-all duration-100"
+              className="w-full px-3 py-1.5 text-lg md:py-2 md:px-4 md:text-base pr-[4.8rem] rounded-full bg-white/10 text-white placeholder-white/50 font-medium backdrop-blur-md border border-white/20 focus:outline-none focus:ring-1 focus:ring-white/50 shadow-lg transition-all duration-100"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);

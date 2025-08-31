@@ -10,14 +10,14 @@ const MarqueeItem = ({ images, from, to }) => {
           key={i}
           initial={{ x: from }}
           animate={{ x: to }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-          className="flex flex-shrink-0">
+          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+          className="flex flex-shrink-0 mb-5">
           {images.map((image, index) => (
             <div className="p-2" key={`${i}-${index}-0`}>
               <div
               key={`${i}-${index}`}
-              className="h-[50px] w-[50px] sm:h-[90px] sm:w-[90px] relative">
-              <Image fill src={image} alt="Logo" unoptimized className="object-contain" />
+              className="h-[40px] w-[130px] md:h-[80px] md:w-[210px] relative">
+              <Image fill src={image} alt="Logo" unoptimized className="object-contain md:px-5" />
               </div>
             </div>
           ))}
