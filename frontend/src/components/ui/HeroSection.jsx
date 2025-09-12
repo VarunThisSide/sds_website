@@ -52,7 +52,7 @@ export default function HeroSection() {
       
       {/* Left: Text Content */}
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold leading-tight">
           Advancing <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400">
             Data Science
@@ -68,7 +68,7 @@ export default function HeroSection() {
         </p>
 
         <div className="mt-8 flex justify-center md:justify-start">
-          <Button size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:opacity-90 transition md:text-xl">
+          <Button variant="ghost" size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:opacity-90 transition md:text-xl">
             GET STARTED →
           </Button>
         </div>
