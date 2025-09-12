@@ -23,7 +23,7 @@ export default function WhatWeOffer({ items, itemsPerPage = 3 }) {
   return (
     <section className="flex justify-center items-center py-20 bg-black text-white">
       <div className="bg-[#1A1A1A] rounded-[3rem] px-6 sm:px-10 py-14 w-full max-w-6xl text-center shadow-lg relative overflow-hidden">
-        <h2 className="text-4xl font-semibold mb-0 py-5">What We Offer?</h2>
+        <h2 className="text-2xl md:text-4xl font-semibold mb-0 py-5">What We Offer?</h2>
         <p className="text-gray-400 mb-10">{items.length} Offerings</p>
 
         {/* Cards */}

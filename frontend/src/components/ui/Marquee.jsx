@@ -16,8 +16,8 @@ const MarqueeItem = ({ images, from, to }) => {
             <div className="p-2" key={`${i}-${index}-0`}>
               <div
               key={`${i}-${index}`}
-              className="h-[40px] w-[130px] md:h-[80px] md:w-[210px] relative">
-              <Image fill src={image} alt="Logo" unoptimized className="object-contain md:px-5" />
+              className="h-[40px] w-[130px] md:h-[80px] md:w-[190px] relative">
+              <Image fill src={image} alt="Logo" unoptimized className="object-contain md:px-3" />
               </div>
             </div>
           ))}

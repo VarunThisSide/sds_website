@@ -19,11 +19,11 @@ const WorkshopCard = ({ title, description, image, reverse, onLearnMore, detail 
         />
       </div>
       <div className="md:w-1/2 w-full text-white text-center md:text-left">
-        <h3 className="text-2xl font-bold mb-4">{title}</h3>
-        <p className="text-lg text-gray-300">{description}</p>
+        <h3 className="text-4xl font-bold mb-4">{title}</h3>
+        <p className="text-xl text-gray-300">{description}</p>
         <button
           onClick={() => onLearnMore({ title, description, image, detail })}
-          className="mt-4 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full hover:scale-105 transition-transform"
+          className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xl rounded-full hover:scale-105 transition-transform"
         >
           Learn More
         </button>
