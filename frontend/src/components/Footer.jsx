@@ -54,7 +54,7 @@ export default function Footer() {
                 setEmail(e.target.value);
               }}/>
             <button
-              className="bg-cyan-600 text-white text-base px-4 right-0 rounded-full absolute active:scale-95 transition-transform h-full hover:bg-cyan-500 duration-200 hover:cursor-pointer"
+              className="bg-gradient-to-r from-cyan-500 to-blue-400 text-white text-base px-4 right-0 rounded-full absolute active:scale-95 transition-transform h-full hover:bg-cyan-500 duration-200 hover:cursor-pointer"
               onClick={(e)=>{
                 setPlaceholder("Done");
                 setEmail("");

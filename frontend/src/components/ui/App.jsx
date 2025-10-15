@@ -16,6 +16,8 @@ import '../css/sandbox.css'
 import '../css/embla.css'
 import EmblaCarousel from './EmblaCarousel.jsx'
 import WorkshopSection from './WorkshopSection.jsx'
+import WhatWeOffer from './WhatWeOffer.jsx'
+
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 6
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
@@ -47,10 +49,22 @@ const topics = [
 ]
 const App = () => (
   <>
-    <div style={{fontSize: 30, textAlign: "center"}} className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400"><b>What We Offer?</b></div>
+    <div style={{fontSize: 40, textAlign: "center"}} className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 pb-20
+      text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+    >
+      <b>What We Offer?</b>
+    </div>
     <EmblaCarousel slides={SLIDES} options={OPTIONS} topics={topics}/>
     <br />
-    <div style={{fontSize: 30, textAlign: "center", marginTop: 100}} className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400"><b>Academic Workshops and Sessions</b></div>
+    <div 
+      className="text-center mt-24 text-transparent 
+        bg-clip-text bg-gradient-to-r  from-purple-500 via-pink-500 to-cyan-400 
+        font-bold text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+      "
+    > 
+      Academic Workshops and Sessions
+    </div>
+
     <WorkshopSection />
   </>
 )
